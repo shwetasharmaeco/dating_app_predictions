@@ -11,8 +11,41 @@ nlp.ipynb: Reruns models using NLP technique on essay columns.
 capstone_2_dating.pptx: Project's power point presentation.
 
 ## Motivation and Goal
-Many users skip questions asking sensitive information. This project tries to predict if a user consumes drug or not from other questions answered by the user implementing machine learning techniques.
+Many users skip questions asking sensitive information. Project's goal is to predict if a user consumes drug or not from other questions answered by the user implementing machine learning techniques.
 
+## Methods Used
+
+Data Visualization
+
+Natural Language Processing
+
+Vectorization
+
+Logistic Regression, Random Forest, Gradient Boosting
+
+## Technologies
+Python
+
+pandas, numpy
+
+Scipy
+
+Scikit-learn
+
+NLTK
+
+matplotlib, seaborn
+
+## Data Pipeline
+Download the OKCupid dataset from reddit.
+
+Select and clean relevant columns.
+
+Split data and balance trained data.
+
+Build up the model pipelines to train the model.
+
+Choose the best performance model to apply to the OKCupid dataset, and predict if a user consumes drugs or not.
 
 ## Data
 The data set consists of user profile data for 59,946 OkCupid users, including age, gender, income, education, religion, location, what kind of relationship, smoking and drinking habits. For some features, such as ethnicity, religion and offspring, users are allowed to pick multiple responses, making the data messy.
@@ -58,7 +91,7 @@ The data set consists of user profile data for 59,946 OkCupid users, including a
  
 ![Image](/images/drugs_age.png)
 
-**Baseline Results**
+## Baseline Results
 
 Accuracy: 0.691
 
@@ -68,7 +101,7 @@ Recall: 0.203
 
 F1 score: 0.191
 
-**Final Results**
+## Final Results
 
 Out of three models, Gradient Boosting gave best results including age, gender, bio, drinking and smoking habits of the users.
 
@@ -80,7 +113,9 @@ Recall: 0.715
 
 F1 score: 0.525
 
-Further, predictions were on users who did not gave an answer for question on drug consumption.
+Further, predictions were on users who did not answer the question on drug consumption.
+
+
 
 
 
