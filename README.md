@@ -1,9 +1,13 @@
 # I know too much!!
 
 images: EDA graphs
+
 dating.ipynb: exploratory data analysis
+
 feature_selection.ipynb: data balancing, runs Logistic Regression, Random Forest Classifier and Gradient Forest Classifier models with all variables but text columns
+
 nlp.ipynb: Reruns models using NLP technique on essay columns.
+
 capstone_2_dating.pptx: Project's power point presentation.
 
 ## Motivation and Goal
@@ -21,15 +25,18 @@ The data set consists of user profile data for 59,946 OkCupid users, including a
 * 33 unique classes for education
 * 206 unique classes for ethnicity
 * 46 unique classes for religion
-* Drugs column (target) had 3 classifications i.e. "Often", "Sometimes", "Never" and data was highly **imbalanced**. Thus, "Often" and "Sometimes" were clubbed including users who consume drugs and recall was chosen as the most important metric to optimize.
+* Drugs column (target) had 3 classifications i.e. "Often", "Sometimes", "Never" and data was highly **imbalanced**. Thus, "Often" and "Sometimes" were clubbed, including users who consume drugs and recall was chosen as the most important metric to optimize.
 
 ![Image](/images/drug_perc.png)
 
-## Data Cleaning
+## Data Cleaning and prepping
 
-Nans were treated as answered no by the user, answers under ethnicity, education and religion were put into wider buckets. "Space camp" or Nan in education column were treated as in college/university. Nan in ethnicity and relogion were put under "other" category.
-
-10 essay columns were clubbed together, stop words were removed, each word reduced to its stem and tokenized before implementing NLP techniques.
+* Nans were treated as answered no by the user for smoking and drinking columns.
+* answers under ethnicity, education and religion were put into wider buckets.
+* "Space camp" or Nan in education column were treated as in college/university. 
+* Nan in ethnicity and religion were put under "other" category.
+* 10 essay columns were clubbed together, stop words were removed, each word reduced to its stem and tokenized before implementing NLP techniques (TF-IDF Vectorizer).
+* Trained data was balanced by oversampling from minority class.
 
 ## Preview
 
@@ -63,6 +70,17 @@ F1 score: 0.191
 
 **Final Results**
 
+Out of three models, Gradient Boosting gave best results including age, gender, bio, drinking and smoking habits of the users.
+
+Accuracy: 0.770
+
+Precision: 0.415
+
+Recall: 0.715
+
+F1 score: 0.525
+
+Further, predictions were on users who did not gave an answer for question on drug consumption.
 
 
 
