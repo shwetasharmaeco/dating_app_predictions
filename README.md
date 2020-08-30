@@ -6,8 +6,8 @@ feature_selection.ipynb: data balancing, runs Logistic Regression, Random Forest
 nlp.ipynb: Reruns models using NLP technique on essay columns.
 capstone_2_dating.pptx: Project's power point presentation.
 
-# Motivation and Goal
-Many users skip questions asking sensitive information. This project tries to predict if a user consumes drug or not from other questions answered by the user using machine learning techniques.
+## Motivation and Goal
+Many users skip questions asking sensitive information. This project tries to predict if a user consumes drug or not from other questions answered by the user implementing machine learning techniques.
 
 
 ## Data
@@ -21,9 +21,15 @@ The data set consists of user profile data for 59,946 OkCupid users, including a
 * 33 unique classes for education
 * 206 unique classes for ethnicity
 * 46 unique classes for religion
-* Drugs column (target) had 3 classifications i.e. "Often", "Sometimes", "Never" and data was highly **imbalanced**. Thus, "Often" and "Sometimes" were clubbed including users who consume drugs.
+* Drugs column (target) had 3 classifications i.e. "Often", "Sometimes", "Never" and data was highly **imbalanced**. Thus, "Often" and "Sometimes" were clubbed including users who consume drugs and recall was chosen as the most important metric to optimize.
 
 ![Image](/images/drug_perc.png)
+
+## Data Cleaning
+
+Nans were treated as answered no by the user, answers under ethnicity, education and religion were put into wider buckets. "Space camp" or Nan in education column were treated as in college/university. Nan in ethnicity and relogion were put under "other" category.
+
+10 essay columns were clubbed together, stop words were removed, each word reduced to its stem and tokenized before implementing NLP techniques.
 
 ## Preview
 
@@ -44,6 +50,18 @@ The data set consists of user profile data for 59,946 OkCupid users, including a
  0 being users who do not consume drug and 1 being users who consume drugs
  
 ![Image](/images/drugs_age.png)
+
+**Baseline Results**
+
+Accuracy: 0.691
+
+Precision: 0.181
+
+Recall: 0.203
+
+F1 score: 0.191
+
+**Final Results**
 
 
 
