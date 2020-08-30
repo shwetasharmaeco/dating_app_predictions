@@ -115,6 +115,10 @@ F1 score: 0.525
 
 Further, predictions were made on drug habits of users who did not answer the question on drug consumption.
 
+## Use case
+
+Unfortunately, this dataset did not have edge based features like matches/swipes/likes but similar profiles can be found out using cosine similarity and each user can then be shown similar profiles which might result in increased swipes or match rate.
+
 
 
 
