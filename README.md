@@ -113,7 +113,7 @@ Recall: 0.715
 
 F1 score: 0.525
 
-Further, predictions were on users who did not answer the question on drug consumption.
+Further, predictions were made on drug habits of users who did not answer the question on drug consumption.
 
 
 
