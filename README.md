@@ -11,7 +11,7 @@ nlp.ipynb: Reruns models using NLP technique on essay columns.
 capstone_2_dating.pptx: Project's power point presentation.
 
 ## Motivation and Goal
-Many users skip questions asking sensitive information. Project's goal is to predict if a user consumes drug or not from other questions answered by the user implementing machine learning techniques.
+Many users skip questions asking sensitive information. Project's goal is to predict if a user consumes drug or not from other questions answered by the user on OKCupid website implementing machine learning techniques.
 
 ## Methods Used
 
