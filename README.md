@@ -120,7 +120,10 @@ Further, predictions were made on drug habits of users who did not answer the qu
 Unfortunately, this dataset did not have edge based features like matches/swipes/likes but similar profiles can be found out using cosine similarity and each user can then be shown similar profiles which might result in increased swipes or match rate.
 
 
+## Credits
 
+Credits to https://github.com/bhattbhavesh91 for oversampling code
+Credits to https://github.com/stuartxu2 for text cleaning code.
 
 
 
