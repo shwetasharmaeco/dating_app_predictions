@@ -122,7 +122,8 @@ Unfortunately, this dataset did not have edge based features like matches/swipes
 
 ## Credits
 
-Credits to https://github.com/bhattbhavesh91 for oversampling code
+Credits to https://github.com/bhattbhavesh91 for oversampling code.
+
 Credits to https://github.com/stuartxu2 for text cleaning code.
 
 
